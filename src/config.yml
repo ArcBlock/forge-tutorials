@@ -1,0 +1,14 @@
+---
+gitRepo: "ArcBlock/forge-tutorials"
+srcPath: "src"
+categories:
+  tutorials:
+    basePath: "/tutorials"
+    title: "Tutorials"
+    link: "/"
+    priority: 999
+    sidebar:
+      'null':
+      - "/"
+      Upgrade Forge:
+      - "/how-to-get-latest-forge"
