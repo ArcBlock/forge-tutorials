@@ -6,7 +6,7 @@
   "author": "wangshijun <wangshijun2010@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@arcblock/gatsby-theme-docs": "^6.1.0",
+    "@arcblock/gatsby-theme-docs": "^6.2.0",
     "gatsby": "^2.13.57"
   },
   "scripts": {

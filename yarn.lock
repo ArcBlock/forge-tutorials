@@ -19,10 +19,10 @@
     remark-containers "^1.1.0"
     remark-generic-extensions "^1.4.0"
 
-"@arcblock/gatsby-theme-docs@^6.1.0":
-  version "6.1.0"
-  resolved "https://registry.npmjs.org/@arcblock/gatsby-theme-docs/-/gatsby-theme-docs-6.1.0.tgz#b9b6e0a8cade393c9d954cf4063f65f2869391a0"
-  integrity sha512-LvJCDBAKNmV0W4ZI2YhJjWtQ0VB7gnHel/ExuWRfaXsiQmN/k6YJTYuGrxFtTkha+YOgxCaAXLz7Z/1Me86BcA==
+"@arcblock/gatsby-theme-docs@^6.2.0":
+  version "6.2.0"
+  resolved "https://registry.npmjs.org/@arcblock/gatsby-theme-docs/-/gatsby-theme-docs-6.2.0.tgz#a177c96bd337dec0a8e3aea073bfdfa1aca36ef2"
+  integrity sha512-dwKU3ZR3KPZVitLpGRsuh3ePx3k+576gRaTWgteK9GFxnXhJAWGTTVR2jAfGK6BV1LqJnNjHetMz2yWR0s7iRQ==
   dependencies:
     "@arcblock/gatsby-awesome-pagination" "^0.3.4"
     "@arcblock/gatsby-remark-extensions" "^6.0.0"
