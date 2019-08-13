@@ -1,9 +1,9 @@
 ---
-title: 'How to get latest forge'
-description: 'How to get latest forge'
+title: 'Forge 的硬升级'
+description: '了解如何在不考虑数据兼容的情况下升级 Forge'
 keywords: ''
 category: 'tutorials'
-layout: 'documentation'
+layout: "documentation"
 tags:
   - 'tutorials'
   - 'forge'

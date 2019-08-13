@@ -11,4 +11,6 @@ categories:
       'null':
       - "/"
       Upgrade Forge:
-      - "/how-to-get-latest-forge"
+      - "/hard-upgrade"
+      XMark:
+      - "/xmark-kitchen-sink"

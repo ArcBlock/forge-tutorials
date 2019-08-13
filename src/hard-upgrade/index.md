@@ -1,9 +1,9 @@
 ---
-title: '如何获取和使用最新版的 Forge'
-description: '如何获取和使用最新版的 Forge'
+title: 'Hard Upgrade'
+description: 'Upgrade your forge powered chain with reset'
 keywords: ''
 category: 'tutorials'
-layout: "documentation"
+layout: 'documentation'
 tags:
   - 'tutorials'
   - 'forge'

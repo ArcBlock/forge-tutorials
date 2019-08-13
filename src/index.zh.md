@@ -10,4 +10,4 @@ tags:
   - "tutorials"
 ---
 
-Forge Tutorials in Chinese
+Forge 教程中文版

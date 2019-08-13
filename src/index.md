@@ -11,5 +11,3 @@ tags:
 ---
 
 Forge Tutorials in English
-
-!ContactForm[]()
