@@ -1,58 +1,37 @@
 TOP_DIR=.
-README=$(TOP_DIR)/README.md
 
 VERSION=$(strip $(shell cat version))
 
-build:
-	@echo "Building the software..."
+build: clean
+	@echo "Building static pages..."
+	@DEBUG=@arcblock/* yarn build
+	@rm public/*.js.map
 
-init: install dep
-	@echo "Initializing the repo..."
+all: build
 
-travis-init:
-	@echo "Initialize software required for travis (normally ubuntu software)"
-
-install:
-	@echo "Install software required for this repo..."
-
-dep:
-	@echo "Install dependencies required for this repo..."
-
-pre-build: install dep
-	@echo "Running scripts before the build..."
-
-post-build:
-	@echo "Running scripts after the build is done..."
-
-all: pre-build build post-build
-
-test:
-	@echo "Running test suites..."
-
-lint:
-	@echo "Linting the software..."
-
-doc:
-	@echo "Building the documenation..."
-
-precommit: dep lint doc build test
-
-travis: precommit
-
-travis-deploy: release
-	@echo "Deploy the software by travis"
+init:
+	@echo "Install npm dependencies required for this repo..."
+	@npm install -g gatsby-cli yarn
+	@yarn --force
 
 clean:
-	@echo "Cleaning the build..."
+	@rm -rf public && rm -rf .cache
+	@echo "All pages are cleaned."
 
-watch:
-	@make build
-	@echo "Watching templates and slides changes..."
-	@fswatch -o src/ | xargs -n1 -I{} make build
+deploy: build
+	@echo "Building and publishing the documenation..."
+	# @aws s3 sync ./public s3://docs.arcblock.io/ --region us-west-2 --profile prod
 
 run:
-	@echo "Running the software..."
+	@yarn start
 
-include .makefiles/*.mk
+serve: build
+	@yarn serve
 
-.PHONY: build init travis-init install dep pre-build post-build all test doc precommit travis clean watch run bump-version create-pr
+travis: init
+	@echo "Prepare travis build env"
+	@gem install travis -v 1.8.9
+
+include .makefiles/release.mk
+
+.PHONY: all clean $(DIRS) build run watch
