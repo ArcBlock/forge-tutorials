@@ -12,7 +12,7 @@
   },
   "scripts": {
     "start": "gatsby develop",
-    "build": "GATSBY_APP_DOMAIN=docs.arcblock.io gatsby build",
+    "build": "NODE_ENV=production GATSBY_APP_DOMAIN=docs.arcblock.io gatsby build",
     "serve": "gatsby serve"
   }
 }
