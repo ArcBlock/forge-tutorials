@@ -58,3 +58,12 @@ This is a error
 }
 :::
 ```
+
+::: graphql {endpoint="http://localhost:8210/api"}
+{
+  getConfig {
+    code
+    config
+  }
+}
+:::
