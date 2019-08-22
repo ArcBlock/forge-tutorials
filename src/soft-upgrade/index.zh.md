@@ -29,7 +29,7 @@ Forge CLI 是 ArcBlock 官方开发和维护的管理本地 Forge 链、节点�
 
 你读到这篇文章时，已经发布的最新的 Forge 版本是：![](https://img.shields.io/badge/dynamic/json.svg?color=red&label=forge-release&query=%24.latest&url=http%3A%2F%2Freleases.arcblock.io%2Fforge%2Flatest.json)。
 
-## 了解本地 Forge 版本
+## 了解 Forge 本地版本
 
 如果你想知道本地 Forge 链的版本，直接运行：`forge status`，得到如下执行结果：
 
