@@ -12,5 +12,6 @@ categories:
       - "/"
       Upgrade Forge:
       - "/hard-upgrade"
+      - "/soft-upgrade"
       XMark:
       - "/xmark-kitchen-sink"
