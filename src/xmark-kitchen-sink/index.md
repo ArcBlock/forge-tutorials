@@ -93,7 +93,7 @@ This is a success
 This is a error
 :::
 
-## GraphQl Playground
+## GraphQL Playground
 
 ```markdown
 ::: graphql {endpoint="http://localhost:8210/api"}
