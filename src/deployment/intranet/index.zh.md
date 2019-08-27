@@ -35,7 +35,7 @@ npmRegistry: http://registry.npm.taobao.org/
 如果用户在 `.npmrc` 里面设置了自定义的 `registry` 选项，那么也会被读取并遵守，只不过 `~/.forgerc.yml` 配置的优先级比 `~/.npmrc` 配置的优先级更高些。
 :::
 
-## 在网下载和安装 Forge？
+## 在局域网下载和安装 Forge？
 
 Forge CLI 和 Forge 及各种 Forge 组件是分开发布的，安装完 Forge CLI 之后，需要执行 `forge install` 去安装 Forge 的各种组件，正常情况下 Forge Install 也需要从网络下载资源，幸好 Forge CLI 支持从本地磁盘加载已经提前下载好的 Forge Release 压缩包。
 
