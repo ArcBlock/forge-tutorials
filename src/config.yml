@@ -8,10 +8,12 @@ categories:
     link: "/"
     priority: 999
     sidebar:
-      'null':
-      - "/"
+      "null":
+        - "/"
       Upgrade Forge:
-      - "/hard-upgrade"
-      - "/soft-upgrade"
+        - "/hard-upgrade"
+        - "/soft-upgrade"
+      Deploy Forge:
+        - "/deployment/intranet"
       XMark:
-      - "/xmark-kitchen-sink"
+        - "/xmark-kitchen-sink"
