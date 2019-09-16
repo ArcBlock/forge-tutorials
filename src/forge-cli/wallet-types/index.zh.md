@@ -76,7 +76,7 @@ const wallet = ForgeSDK.Wallet.fromSecretKey(secretKeyHex);
 // 链接到本地的节点，执行 forge ps 能看到这个 endpoint
 ForgeSDK.connect('http://127.0.0.1:8210/api');
 
-async () => {
+(async () => {
   // 如果私钥是你配置的链创世 token holder，不需要 declare
   const declareHash = await ForgeSDK.sendDeclareTx({
     tx: { itx: { moniker: 'test_user' } },
@@ -98,5 +98,5 @@ async () => {
     wallet,
   });
   console.log('transferred', transferHash);
-};
+})();
 ```
