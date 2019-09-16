@@ -55,7 +55,7 @@ const ForgeSDK = require('@arcblock/forge-sdk');
 const secretKey =
   'pFV7aEv29U0-dBYfi7DTXnRTlFZI8dlA_YHWqhDRxYECdy6YxWlrvKKKoM-wN-ek2lOcgoiIpeCS00diKo5_Kw';
 // 如果是 base16 的私钥，不用做 base64 的转码
-const secretKeyHex = ForgeSDK.Util.bytesToHex(Buffer.from(base64.unescape(secretKeyHex), 'base64'));
+const secretKeyHex = ForgeSDK.Util.bytesToHex(Buffer.from(base64.unescape(secretKey), 'base64'));
 const wallet = ForgeSDK.Wallet.fromSecretKey(secretKeyHex);
 
 console.log(wallet.toJSON());
@@ -70,7 +70,7 @@ const ForgeSDK = require('@arcblock/forge-sdk');
 const secretKey =
   'pFV7aEv29U0-dBYfi7DTXnRTlFZI8dlA_YHWqhDRxYECdy6YxWlrvKKKoM-wN-ek2lOcgoiIpeCS00diKo5_Kw';
 // 如果是 base16 的私钥，不用做 base64 的转码
-const secretKeyHex = ForgeSDK.Util.bytesToHex(Buffer.from(base64.unescape(secretKeyHex), 'base64'));
+const secretKeyHex = ForgeSDK.Util.bytesToHex(Buffer.from(base64.unescape(secretKey), 'base64'));
 const wallet = ForgeSDK.Wallet.fromSecretKey(secretKeyHex);
 
 // 链接到本地的节点，执行 forge ps 能看到这个 endpoint
