@@ -9,14 +9,17 @@ module.exports = {
       resolve: require.resolve('@arcblock/gatsby-theme-docs'),
       options: {
         version: `v${version}`,
-        sourceDirs: [path.resolve(__dirname, 'src')],
+        official: true,
+        disableI18n: false,
+        showGetStarted: true,
+        sourceDirs: [path.resolve(__dirname, 'src', 'pages')],
         siteMetadata: {
           title: 'ArcBlock',
           subtitle: 'Documentation',
           description: 'Forge SDK Documentation',
         },
         algoliaSearch: {
-          enabled: process.env.NODE_ENV !== 'production',
+          enabled: false,
           appId: process.env.GATSBY_ALGOLIA_APP_ID,
           adminKey: process.env.GATSBY_ALGOLIA_ADMIN_KEY,
           searchKey: process.env.GATSBY_ALGOLIA_SEARCH_KEY,
